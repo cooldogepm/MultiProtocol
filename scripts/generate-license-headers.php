@@ -15,7 +15,7 @@ function main(): void
 
     $rawLicense = substr($rawLicense, 0, strrpos($rawLicense, "\n"));
 
-    $rawLicense = implode(array_map(fn(string $line) => (strlen($line) > 1 ? "\n * " : "\n *") . $line, explode("\n", $rawLicense)));
+    $rawLicense = str_replace("\n", "\n * ", $rawLicense);
 
     $license = $start . PHP_EOL . " * " . $rawLicense . " " . $end;
 
