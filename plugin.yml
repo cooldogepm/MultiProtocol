@@ -1,0 +1,7 @@
+name: MultiProtocol
+api: [ 4.0.0 ]
+version: 0.0.1
+author: cooldogedev
+website: https://github.com/cooldogedev/MultiProtocol
+description: Allows players to play with different versions of the game
+main: cooldogedev\MultiProtocol\MultiProtocol
